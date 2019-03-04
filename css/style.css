@@ -218,6 +218,7 @@ button:active {
 }
 
 .bio__content {
+    margin: 0 auto;
     max-width: 90%;
 }
 
