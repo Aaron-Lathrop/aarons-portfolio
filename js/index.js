@@ -5,7 +5,7 @@ $(document).ready(function() {
         $('.nav__list').toggleClass('dropdown');
     });
 
-    const skills = ["Javascript", "NodeJS", "React", "Redux", "MongoDB", "PostgreSQL"];
+    const skills = ["NodeJS", "React", "Redux", "MongoDB", "PostgreSQL"];
     const numberOfSkills = skills.length;
     let index = 0;
 

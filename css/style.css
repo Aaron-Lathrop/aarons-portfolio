@@ -17,18 +17,44 @@ a {
     color: #777;
 }
 
+a, button {
+    cursor: pointer;
+}
+
+button:hover {
+    transform: translateY(-3px);
+    transition: 0.5s;
+}
+
+button:active {
+    transform: translateY(0);
+    transition: 0.5s;
+}
+
 .header {
     display: flex;
     flex-direction: column;
+    align-content: space-between;
     min-height: 50vh;
     background-color: #bbb;
 }
 
 .header__container {
-    margin: 40px 0;
+    margin: auto 0;
     align-self: center;
 }
 
 .header__greeting {
     margin: 15px 0;
+}
+
+.header__message {
+    display: block;
+}
+
+.header__button {
+    display: block;
+    margin: 45px auto 0 auto;
+    padding: 15px 40px;
+    border: none; 
 }
