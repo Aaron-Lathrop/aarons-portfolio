@@ -3,21 +3,20 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 10px;
+    padding: 20px;
     box-shadow: 0px 0px 1px;
 }
 
 .nav__list {
     display: none;
     text-align: right;
-    margin-right: 36px;
-    padding-top: 30px;
+    padding: 15px 0;
     list-style-type: none;
 }
 
 .nav__list--item {
     display: inline;
-    padding: 22px 7.5px;
+    padding: 15px 7.5px;
 }
 
 .nav__list--item:hover {
@@ -29,8 +28,8 @@
 .dropdown {
     display: block;
     position: absolute;
-    top: 54px;
-    right: -34px;
+    top: 74px;
+    right: 0px;
     padding: 0px 50px;
     box-shadow: 0px 1px 4px;
     text-align: center;
@@ -73,11 +72,16 @@
 /* Styles for screens larger than 600px */
 @media screen and (min-width: 600px) {
     /* Remove mobile navigation styling */
+    .nav {
+        padding: 0 20px;
+    }
+
     .hamburger__container {
         display: none;
     }
 
     .nav__list {
         display: initial;
+        height: 100%;
     }
 }
