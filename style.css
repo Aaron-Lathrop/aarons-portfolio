@@ -8,3 +8,31 @@ html {
     scroll-behavior: smooth;
 }
 
+/* Hamburger icon for mobile - animated */
+.hamburger__container {
+    display: inline-block;
+    cursor: pointer;
+}
+
+.hamburger--top, .hamburger--middle, .hamburger--bottom {
+    width: 30px;
+    height: 3px;
+    background-color: #333;
+    margin: 6px 0;
+    transition: 0.4s;
+}
+
+/* The .change class is added on-click. It toggles the lines between three horizontal lines and an X */
+.change .hamburger--top {
+    -webkit-transform: rotate(-45deg) translate(-9px, 6px);
+    transform: rotate(-45deg) translate(-9px, 6px);
+}
+
+.change .hamburger--middle {
+    opacity: 0;
+}
+
+.change .hamburger--bottom {
+    -webkit-transform: rotate(45deg) translate(-6px, -5px);
+    transform: rotate(45deg) translate(-6px, -5px);
+}
