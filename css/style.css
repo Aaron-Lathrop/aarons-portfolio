@@ -138,6 +138,7 @@ button:active {
 
 .project__description--container p {
     margin: 25px 0;
+    font-size: 1.25rem;
 }
 
 .project h3 {
@@ -163,11 +164,16 @@ button:active {
     justify-content: space-around;
     padding: 35px 0;
     font-size: 1.5rem;
+    transition: all ease-in-out .5s;
 }
 
 @media screen and (min-width: 600px) {
     .project {
         max-width: 350px;
+    }
+
+    .project__btn--container button {
+        padding: 10px 20px;
     }
 }
 
@@ -180,10 +186,14 @@ button:active {
         line-height: 5.5rem;
         font-size: 1.5rem;
     }
+
+    .project__btn--container button {
+        padding: 15px 25px;
+    }
 }
 
-/* About Section */
-.about {
+/* bio Section */
+.bio {
     margin: 25px;
     display: flex;
     flex-direction: column;
@@ -191,34 +201,74 @@ button:active {
     align-content: center;
 }
 
-.about__container {
+.bio__container {
     display: flex;
     flex-direction: column-reverse;
     margin: 0 auto;
     max-width: 90%;
     line-height: 1.5;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
 }
 
-.about h2 {
+.bio h2, h3 {
     text-align: center;
     line-height: 4.5rem;
     font-size: 2.0rem;
     transition: all ease-in-out .5s;
 }
 
-.about_bio {
+.bio__content {
     max-width: 90%;
 }
 
-.about_photo {
+.bio__photo {
     text-align: center;
 }
 
-.about__photo img {
+.bio__photo img {
+    height: auto;
     margin-bottom: 25px;
     max-width: 100%;
     border-radius: 20px;
+}
+
+@media screen and (min-width: 600px) {
+    .bio__container {
+        flex-direction: column;
+    }
+
+    .bio__bio {
+        margin: 0 auto;
+        max-width: 80%;
+    }
+
+    .bio__photo {
+        text-align: center;
+    }
+
+    .bio__photo img {
+        max-width: 80%;
+    }
+}
+
+@media screen and (min-width: 800px) {
+    .bio__photo img {
+        max-width: 70%;
+    }
+}
+
+@media screen and (min-width: 1400px) {
+    .bio__content {
+        max-width: 900px;
+    }
+}
+
+/* Contact Section */
+.contact {
+    margin: 25px;
+    text-align: center;
+    line-height: 1.5;
+    font-size: 1.5rem;
 }
 
 /* Footer Section */

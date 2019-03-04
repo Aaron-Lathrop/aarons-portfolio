@@ -21,7 +21,7 @@
         <ul class="nav__list">
             <li class="nav__list--item"><a href="#projects">Projects</a></li>
             <li class="nav__list--item"><a href="#skills">Skills</a></li>
-            <li class="nav__list--item"><a href="#about">About Me</a></li>
+            <li class="nav__list--item"><a href="#bio">Bio</a></li>
             <li class="nav__list--item"><a href="#contact" class="btn btn--outline">Contact</a></li>
         </ul>
        
@@ -37,7 +37,7 @@
         <div class="header__container">
             <h1 class="header__greeting">I'm Aaron, a web developer</h1>
             <p class="header__message">I build things with <span id="developer-skills" data-skills='["NodeJS", "React", "Redux", "MongoDB", "PostgreSQL"]'>Javascript</span></p>
-            <button class="btn--outline header__button">See my work</button>
+            <button class="btn--outline header__button">See my resume</button>
         </div>
     </header>
 
@@ -79,7 +79,7 @@
                             <img src="/assets/projects/interview-prep.png" alt="Interview Prep" />
                         </a>
                         <div class="project__description--container">
-                            <p>An interview practice app using NodeJS & Express</p>
+                            <p>An interview practice app using NodeJS</p>
                             <p><b>Tech Used</b></p>
                         </div>
                         <div class="project__skill--container">
@@ -123,37 +123,41 @@
             </div>
         </section>
 
-        <section id='about'>
-            <div class="about">
-                <h2>About</h2>
-                <div class="about__container">
+        <section id='bio'>
+            <div class="bio">
+                <h2>Bio</h2>
+                <h3><em>Nice to meet you!</em></h3>    
+                <div class="bio__container">
 
-                    <div class="about__bio">
+                    <div class="bio__content">
                         <p>
-                            Based in Colorado, I'm a full stack web developer, explorer, and former teacher. My programming background started in high school where I learned how to create animations and simple games like blackjack. I'm passionate about learning new technologies to improve the overall experience and maintainability of websites.
+                            I'm a full stack developer located in Denver, Colorado. I love creating interesting websites, learning more about sever-side technologies and website security. I've done some volunteer work where I've help mentor people just starting out and regularly attend developer meetups to keep involved with the community. I'm currently looking for work and you can contact me below. 
                             <br /><br />
         
-                            In my spare time, I hike (especially up mountains like the two times I climbed Mt. Fuji). The main thing hiking has taught me is that the journey, and the challenges you overcome along the way, is where people truly grow and shine. We never really fail, as long as we keep learning and keep pushing forward.
-                            <br /><br />
+                            <!-- In my spare time, I hike (especially up mountains like the two times I climbed Mt. Fuji). The main thing hiking has taught me is that the journey, and the challenges you overcome along the way, is where people truly grow and shine. We never really fail, as long as we keep learning and keep pushing forward.
+                            <br /><br /> -->
                         </p>
                     </div>
-                    <div class="about__photo">
+                    <div class="bio__photo">
                         <img src="/assets/about/Aaron-About-Me1.jpg" alt="It's a me, Aaron!">
                     </div>
                 </div>
             </div>
         </section>
+
+        <section id='contact'>
+            <div class="contact">
+                <!-- <p>I love chatting code, travel, food, and SpaceX. <br/> Plus, I'm available to hire.</p> -->
+                <a href="mailto:aaron.s.lathrop@gmail.com" target="_blank" rel="noreferrer noopener"><button class="btn btn--solid"><i class="far fa-hand-peace"></i> Say Hi</button></a>
+            </div>
+        </section>
     </main>
 
-    <footer class="footer">
-            <div>
-                <div>
-                    <a href="https://www.linkedin.com/in/aaron-lathrop-miller/" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin-in social-icon"></i></a>
-                    <a href="mailto:aaron.s.lathrop@gmail.com" target="_blank" rel="noreferrer noopener"><i class="far fa-envelope social-icon"></i></a>
-                    <a href="https://github.com/Aaron-Lathrop" target="_blank" rel="noreferrer noopener"><i class="fab fa-github social-icon"></i></a>
-                </div>
-                    <p>Copyright 2019 - Aaron Lathrop</p>
-            </div>
+    <footer class="footer"> 
+            <a href="https://www.linkedin.com/in/aaron-lathrop-miller/" target="_blank" rel="noreferrer noopener"><i class="fab fa-linkedin-in social-icon"></i></a>
+            <a href="mailto:aaron.s.lathrop@gmail.com" target="_blank" rel="noreferrer noopener"><i class="far fa-envelope social-icon"></i></a>
+            <a href="https://github.com/Aaron-Lathrop" target="_blank" rel="noreferrer noopener"><i class="fab fa-github social-icon"></i></a>
+            <p>Copyright 2019 - Aaron Lathrop</p>
     </footer>
 
     <script src="./js/jquery-3.3.1.slim.min.js"></script>
