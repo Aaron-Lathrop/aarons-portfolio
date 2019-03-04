@@ -24,8 +24,9 @@
 }
 
 .nav__list--item:hover {
+    text-decoration: underline;
     transition: 200ms ease-in-out;
-    background-color: aliceblue;
+    /* background-color: aliceblue; */
 }
 
 /* Mobile navigation dropdown */
