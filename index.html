@@ -36,13 +36,39 @@
     <header role="banner" class="header">
         <div class="header__container">
             <h1 class="header__greeting">I'm a web developer</h1>
-            <p class="header__message">I build things with <span id="developer-skills">Javascript</span></p>
+            <p class="header__message">I build things with <span id="developer-skills" data-skills='["NodeJS", "React", "Redux", "MongoDB", "PostgreSQL"]'>Javascript</span></p>
             <button class="header__button">See my work</button>
         </div>
     </header>
 
     <main role="main" class="main">
-        
+        <section id="projects">
+            <h2>Projects</h2>
+            <p>
+                <span>Destino</span> | 
+                <span>Interview Prep</span> | 
+                <span>Civic Researcher</span>
+            </p>
+
+            <div class="project">
+                <h3>Destino - Simple Planning</h3>
+                <img src="/assets/projects/Trips_page.png" alt="Destino - Simple Planning" />
+                <div class="project__description--container">
+                    <p>A travel planning app using React.js</p>
+                    <p><b>Tech Used</b></p>
+                </div>
+                <div class="project__skill--container">
+                    <div><img src="/assets/logos/React_logo.png" alt="React.js"><p>React</p></img></div>
+                    <div><img src="/assets/logos/Redux_logo.png" alt="Redux"><p>Redux</p></img></div>
+                    <div><img src="/assets/logos/Node_logo.png" alt="NodeJS"><p>NodeJS</p></img></div>  
+                </div>
+                <div class="project__btn--container">
+                    <button class="btn btn--outline"><i class="fab fa-github"></i> View Code</button>
+                    <button class="btn btn--solid"><i class="fas fa-external-link-alt"></i> View Live</button>
+                </div>
+            </div>
+
+        </section>
     </main>
 
     <script src="./js/jquery-3.3.1.slim.min.js"></script>

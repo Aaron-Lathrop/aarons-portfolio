@@ -10,17 +10,19 @@ html {
 
 body {
     font-size: 16px;
+    color: #707070;
 }
 
 a {
     text-decoration: none;
-    color: #777;
+    color: #707070;
 }
 
 a, button {
     cursor: pointer;
 }
 
+/* Button Styles */
 button:hover {
     transform: translateY(-3px);
     transition: 0.5s;
@@ -31,6 +33,25 @@ button:active {
     transition: 0.5s;
 }
 
+.btn {
+    padding: 10px 25px;
+    border: none;
+    border-radius: 2px;
+}
+
+.btn--outline {
+    border: 1px solid #05A0E9;
+    background-color: white;
+    color: #05A0E9;
+}
+
+.btn--solid {
+    border: 1px solid #05A0E9;
+    background-color: #05A0E9;
+    color: white;
+}
+
+/* Header Section */
 .header {
     display: flex;
     flex-direction: column;
@@ -44,17 +65,52 @@ button:active {
     align-self: center;
 }
 
-.header__greeting {
+.header__container h1 {
     margin: 15px 0;
 }
 
-.header__message {
+.header__container p {
     display: block;
 }
 
-.header__button {
+.header__container button {
     display: block;
     margin: 45px auto 0 auto;
     padding: 15px 40px;
     border: none; 
+}
+
+/* Project Section */
+.project {
+    margin: 5px;
+    border: 0px solid #707070;
+    border-radius: 5px;
+    box-shadow: 0px 0px 1px #707070;
+    text-align: center;
+}
+
+.project__description--container p {
+    margin: 25px 0;
+}
+
+.project h3 {
+    padding: 15px;
+    background-color: #05A0E9;
+    color: white;
+}
+
+.project img {
+    max-width: 100%;
+}
+
+.project__skill--container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.project__btn--container {
+    display: flex;
+    justify-content: space-around;
+    padding: 35px 0;
 }
