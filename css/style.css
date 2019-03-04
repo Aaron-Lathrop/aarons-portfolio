@@ -24,13 +24,13 @@ a, button {
 
 /* Button Styles */
 button:hover {
-    transform: translateY(-3px);
-    transition: 0.5s;
+    /* transform: translateY(-1px); */
+    transition: ease-in-out 0.5s;
 }
 
 button:active {
     transform: translateY(0);
-    transition: 0.5s;
+    transition: ease-in-out 0.5s;
 }
 
 .btn {
@@ -45,10 +45,26 @@ button:active {
     color: #05A0E9;
 }
 
+.btn--outline:hover {
+    background-color: #05A0E9;
+    color: white;
+}
+
+.btn--outline:active {
+    border: 1px solid #05A0E9;
+    background-color: white;
+    color: #05A0E9;
+}
+
 .btn--solid {
     border: 1px solid #05A0E9;
     background-color: #05A0E9;
     color: white;
+}
+
+.btn--solid:hover {
+    border: 1px solid #0873b6;
+    background-color: #0873b6;
 }
 
 /* Header Section */
@@ -57,7 +73,9 @@ button:active {
     flex-direction: column;
     align-content: space-between;
     min-height: 50vh;
-    background-color: #bbb;
+    background-color: #1DA1F2;
+    color: white;
+    text-align: center;
 }
 
 .header__container {
@@ -67,26 +85,48 @@ button:active {
 
 .header__container h1 {
     margin: 15px 0;
+    font-size: 2.5rem;
 }
 
 .header__container p {
     display: block;
+    font-size: 1.5rem;
 }
 
 .header__container button {
     display: block;
     margin: 45px auto 0 auto;
     padding: 15px 40px;
-    border: none; 
+    border: none;
+    font-size: 1rem;
+}
+
+.header__container button:hover {
+    /* Change padding to adject for extra border */
+    padding: 14px 39px;
+    border: 2px solid white;
+    background-color: #05A0E9;
+    color: white;
 }
 
 /* Project Section */
+.project__container--main {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
 .project {
     margin: 5px;
     border: 0px solid #707070;
     border-radius: 5px;
     box-shadow: 0px 0px 1px #707070;
     text-align: center;
+}
+
+.project__header {
+    text-align: center;
+    line-height: 3.5rem;
 }
 
 .project__description--container p {
@@ -113,4 +153,10 @@ button:active {
     display: flex;
     justify-content: space-around;
     padding: 35px 0;
+}
+
+@media screen and (min-width: 600px) {
+    .project {
+        max-width: 350px;
+    }
 }
