@@ -9,7 +9,8 @@ html {
 }
 
 body {
-    font-size: 16px;
+    font-family: 'Montserrat','Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 1rem;
     color: #707070;
 }
 
@@ -24,7 +25,6 @@ a, button {
 
 /* Button Styles */
 button:hover {
-    /* transform: translateY(-1px); */
     transition: ease-in-out 0.5s;
 }
 
@@ -68,7 +68,9 @@ button:active {
 }
 
 /* Section Headers */
-.section__header--projects, .section__header--bio {
+.section__header--projects, 
+.section__header--skills, 
+.section__header--bio {
     position: relative;
     margin: 40px auto;
     padding: 0 20px;
@@ -77,7 +79,9 @@ button:active {
     transform: rotate(-5deg)
 }
 
-.section__header--projects::before, .section__header--bio::before {
+.section__header--projects::before, 
+.section__header--skills::before, 
+.section__header--bio::before {
     content: '';
     position: absolute;
     width: 178px;
@@ -89,7 +93,9 @@ button:active {
     border-radius: 5px;
 }
 
-.section__header--projects::after, .section__header--bio::after {
+.section__header--projects::after,
+.section__header--skills::after, 
+.section__header--bio::after {
     content: '';
     position: absolute;
     width: 165.6px;
@@ -102,6 +108,22 @@ button:active {
     transform: rotate(-8deg);
 }
 
+/* Adjustments for different size of word 'Skills' */
+.section__header--skills::before {
+    width: 155.6px;
+    height: 82.8px;
+    top: -.08px;
+    left: -22.72px;
+}
+
+.section__header--skills::after {
+    width: 165.8px;
+    height: 82.8px;
+    top: 5.2px;
+    left: -30.296px;
+}
+
+/* Adjustments for different size of word 'Bio' */
 .section__header--bio::before {
     width: 155.6px;
     height: 82.8px;
@@ -195,8 +217,7 @@ button:active {
     background-color: #0873b6;
     color: white;
     font-size: 1.45rem;
-    font-weight: 100;
-    
+    font-weight: 100;   
 }
 
 .project img {
@@ -219,11 +240,17 @@ button:active {
 
 @media screen and (min-width: 600px) {
     .project {
-        max-width: 350px;
+        max-width: 550px;
     }
 
     .project__btn--container button {
         padding: 10px 20px;
+    }
+}
+
+@media screen and (min-width: 1082px) {
+    .project {
+        max-width: 350px;
     }
 }
 
@@ -234,7 +261,6 @@ button:active {
 
     .project__header {
         line-height: 5.5rem;
-        font-size: 1.5rem;
     }
 
     .project__btn--container button {
@@ -242,7 +268,93 @@ button:active {
     }
 }
 
-/* bio Section */
+/* Skills Section */
+.skills {
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    font-size: 1rem;
+}
+
+.skills__header {
+    padding-top: 25px;
+    text-align: center;
+    line-height: 4.5rem;
+    transition: all ease-in-out .5s;
+}
+
+.skills__container {
+    margin: 0 auto;
+    padding: 25px 0px;
+    width: 100%;
+    border-radius: 5px;
+    box-shadow: -.5px 5.5px 15px #08b67c;
+}
+
+.skills__container::before {
+    box-shadow: -.5px 7.5px 15px #0873b6;
+}
+
+.skills__container ul {
+    margin: 0 auto;
+    padding: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 0px;
+    width: 100%;
+    list-style-type: none;
+}
+
+.skills__list-item {
+    position: relative;
+    margin: 10px;
+    padding: 0;
+}
+
+.skills__list-item::before {
+    content: '+ ';
+    color: #08b67c;
+    font-size: 1.5rem;
+    font-weight: bolder;
+}
+
+@media screen and (min-width: 400px) {
+    .skills__containter {
+        padding: 25px;
+    }
+
+    .skills__container ul {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .skills__list-item {
+        margin: 10px auto;
+    }
+}
+
+@media screen and (min-width: 515px) {
+    .skills {
+        font-size: 1.15rem;
+    }
+
+    .skills__container ul {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
+
+@media screen and (min-width: 700px) {
+    .skills__container {
+        width: 90vw;
+    }
+
+    .skills__container ul {
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+}
+
+/* Bio Section */
 .bio {
     margin: 25px;
     display: flex;
