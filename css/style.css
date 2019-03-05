@@ -287,7 +287,7 @@ button:active {
 
 .skills__container {
     margin: 0 auto;
-    padding: 25px 0px;
+    padding: 25px 20px;
     width: 100%;
     border-radius: 5px;
     box-shadow: -.5px 5.5px 15px #08b67c;
