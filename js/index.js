@@ -13,5 +13,5 @@ $(document).ready(function() {
         $('#developer-skills').text(skills[index]);
         index = (index + 1) % numberOfSkills;
     }, 3000)
-
+    
 });
