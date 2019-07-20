@@ -73,6 +73,11 @@ button:active {
     background-color: #0873b6;
 }
 
+/* Main Header */
+.header__message {
+    margin-bottom: 10px;
+}
+
 /* Section Headers */
 .section__header--projects, 
 .section__header--skills, 
@@ -172,7 +177,7 @@ button:active {
 
 .header__container button {
     display: block;
-    margin: 45px auto 0 auto;
+    margin: auto;
     padding: 15px 40px;
     border: none;
     font-size: 1rem;
@@ -250,6 +255,10 @@ button:active {
 }
 
 @media screen and (min-width: 600px) {
+    .header__message {
+        margin-bottom: 20px;
+    }
+
     .project {
         max-width: 550px;
     }
